@@ -2,8 +2,8 @@
   <header class="header">
     <nav class="nav-wrapper">
       <div class="container-wide">
-        <div class="row space-between">
-          <div class="logo">MNTN</div>
+        <div class="row space-between align-items">
+          <h2 class="logo">MNTN</h2>
           <div class="nav">
             <ul>
               <li><a href="#">Equipment</a></li>
@@ -12,6 +12,9 @@
             </ul>
           </div>
           <a href="#" class="account">Account</a>
+          <button class="nav-button">
+            <span class="nav-button-icon"></span>
+          </button>
         </div>
       </div>
     </nav>
@@ -23,10 +26,10 @@
     </a>
   </header>
   <main class="container main">
-    <div class="article">
+    <article class="article">
       <div class="article-text" data-number="01">
         <div class="article-subtitle">GEt Started</div>
-        <div class="article-title">What level of hiker are you?</div>
+        <h2 class="article-title">What level of hiker are you?</h2>
         <p>
           Determining what level of hiker you are can be an important tool when
           planning future hikes. This hiking level guide will help you plan
@@ -34,7 +37,7 @@
           All Trails and Modern Hiker. What type of hiker are you – novice,
           moderate, advanced moderate, expert, or expert backpacker?
         </p>
-        <div class="article-read-more">read more</div>
+        <a href="#" class="article-read-more">read more</a>
       </div>
       <div class="article-img">
         <img
@@ -42,12 +45,12 @@
           alt="What level of hiker are you?"
         />
       </div>
-    </div>
+    </article>
 
-    <div class="article">
+    <article class="article">
       <div class="article-text" data-number="02">
         <div class="article-subtitle">Hiking Essentials</div>
-        <div class="article-title">Picking the right Hiking Gear!</div>
+        <h2 class="article-title">Picking the right Hiking Gear!</h2>
         <p>
           The nice thing about beginning hiking is that you don’t really need
           any special gear, you can probably get away with things you already
@@ -55,7 +58,7 @@
           make is wearing jeans and regular clothes, which will get heavy and
           chafe wif they get sweaty or wet.
         </p>
-        <div class="article-read-more">read more</div>
+        <a href="#" class="article-read-more">read more</a>
       </div>
       <div class="article-img">
         <img
@@ -63,12 +66,12 @@
           alt="What level of hiker are you?"
         />
       </div>
-    </div>
+    </article>
 
-    <div class="article">
+    <article class="article">
       <div class="article-text" data-number="03">
         <div class="article-subtitle">where you go is the key</div>
-        <div class="article-title">Understand Your Map & Timing</div>
+        <h2 class="article-title">Understand Your Map & Timing</h2>
         <p>
           To start, print out the hiking guide and map. If it’s raining, throw
           them in a Zip-Lock bag. Read over the guide, study the map, and have a
@@ -76,7 +79,7 @@
           as I hike. For example, I’ll read the guide and know that say, in a
           mile, I make a right turn at the junction..
         </p>
-        <div class="article-read-more">read more</div>
+        <a href="#" class="article-read-more">read more</a>
       </div>
       <div class="article-img">
         <img
@@ -84,7 +87,7 @@
           alt="What level of hiker are you?"
         />
       </div>
-    </div>
+    </article>
   </main>
   <footer class="footer ">
     <div class="container">

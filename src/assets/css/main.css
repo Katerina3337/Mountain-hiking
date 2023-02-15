@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing: border-box;
 }
@@ -14,6 +16,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* BASE */
@@ -137,11 +144,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-button {
+    position: relative;
+    display: none;
     height: 25px;
     border: none;
     padding: 0;
     cursor: pointer;
     background: transparent;
+    z-index: 9;
+}
+
+.nav-button:focus,
+.nav-button:active {
+    outline: 0;
 }
 
 .nav-button-icon {
@@ -175,7 +190,59 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #ffffff;
 }
 
-/* HERO */
+.nav-button-close .nav-button-icon {
+    background-color: transparent;
+}
+
+.nav-button-close .nav-button-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-button-close .nav-button-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.nav-button-close {
+    position: fixed;
+    top: 70px;
+    right: 15px;
+}
+
+.mobile-nav {
+    padding: 70px 70px 50px 30px;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    right: 0;
+
+    display: none;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 320px;
+    height: 100%;
+
+    background-color: rgba(11, 29, 38, 0.8);
+}
+
+.mobile-nav .nav,
+.mobile-nav .account {
+    display: block;
+}
+
+.mobile-nav .nav ul {
+    flex-direction: column;
+}
+
+.mobile-nav .nav ul li {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+    /* HERO */
 
 .hero {
     display: block;
@@ -264,6 +331,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .article-text {
+    margin-right: 25px;
     position: relative;
     max-width: 782px;
     padding-left: 150px;
@@ -361,6 +429,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer-row {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-copyright {
